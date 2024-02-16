@@ -11,9 +11,15 @@ public class Shirt extends Clothing{
     }
 
     public Shirt(String idProduct, String name, String brand, String price, String size, String material, String gender, String color, String sleeve_type) {
-        super(idProduct, name, brand, price, size, material, gender); // Call the constructor of the superclass (Clothing)
-        setColor(color);
-        setSleeve_type(sleeve_type);
+        setIdProduct(idProduct);
+        setName(name);
+        setBrand(brand);
+        setPrice(price);
+        setSize(size);
+        setMaterial(material);
+        setGender(gender);
+        this.color = color;
+        this.sleeve_type = sleeve_type;
     }
 
     /*Getter & Setter */

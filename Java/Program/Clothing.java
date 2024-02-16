@@ -12,10 +12,13 @@ public class Clothing extends Product{
     }
 
     public Clothing(String idProduct, String name, String brand, String price, String size, String material, String gender) {
-        super(idProduct, name, brand, price); // Call the constructor of the superclass (Product) with parameters
-        setSize(size);
-        setMaterial(material);
-        setGender(gender);
+        setIdProduct(idProduct);
+        setName(name);
+        setBrand(brand);
+        setPrice(price);
+        this.size = size;
+        this.material = material;
+        this.gender = gender;
     }
 
     /*Getter & Setter */
