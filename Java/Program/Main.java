@@ -47,6 +47,7 @@ public class Main {
                     Shirt temp = new Shirt(idProduct, name, brand, price, size, material, gender, color, sleeve_type);
                     list.add(temp);
                 }
+                System.out.println("Data Berhasil Ditambah!");
             }
             
             else if (choice == 2) {
