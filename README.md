@@ -9,4 +9,6 @@ seperti yang telah dispesifikasikan. Aamiin.
 
 ## Penjelasan Desain Program
 
-## Dokumentasi Program (Python)
+## Dokumentasi Program 
+![Java1](https://github.com/NabilHanifA/LP2DPBO2024C1/assets/133948088/331a7f60-1882-42fc-8eca-ef9389b2b421)
+![Java2](https://github.com/NabilHanifA/LP2DPBO2024C1/assets/133948088/e51d4735-1cfe-4dc2-a3f4-e38a5bb1b8d4)
