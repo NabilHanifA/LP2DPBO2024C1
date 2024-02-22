@@ -1,0 +1,61 @@
+class Tabel:
+    __baris = 0
+    __kolom = 0
+    
+    # Constructor
+    def __init__(self, baris=0, kolom=0):
+        self.__baris = baris
+        self.__kolom = kolom
+
+    # Getter and Setter
+    # Getter 
+    def getBaris(self):
+        return self.__baris
+
+    def getKolom(self):
+        return self.__kolom
+
+    # Setter 
+    def setBaris(self, baris):
+        self.__baris = baris
+
+    def setKolom(self, kolom):
+        self.__kolom = kolom
+
+    def buatTabel(self, data, columnNames):
+        baris = len(data)
+        kolom = len(data[0])
+
+        # Calculate the maximum width for each column
+        maxWidths = [0] * kolom
+        for j in range(kolom):
+            for i in range(baris):
+                maxWidths[j] = max(maxWidths[j], len(data[i][j]))
+            # Adjust maximum width based on column names
+            maxWidths[j] = max(maxWidths[j], len(columnNames[j]))
+
+        # Print the separator line above the table
+        self.printSeparator(maxWidths)
+
+        # Print the title row
+        for j in range(kolom):
+            print(f"| {columnNames[j]:<{maxWidths[j]}} ", end="")
+        print("|")
+
+        # Print the separator line below the title row
+        self.printSeparator(maxWidths)
+
+        # Print the table data
+        for i in range(baris):
+            for j in range(kolom):
+                print(f"| {data[i][j]:<{maxWidths[j]}} ", end="")
+            print("|")
+
+            # Print the separator line between rows
+            self.printSeparator(maxWidths)
+
+    # Helper method to print the separator line
+    def printSeparator(self, maxWidths):
+        for maxWidth in maxWidths:
+            print("-" * (maxWidth + 3), end="")
+        print("-")
