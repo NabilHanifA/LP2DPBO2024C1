@@ -18,17 +18,34 @@ Program ini adalah contoh implementasi konsep multi-level inheritance dalam pemr
       - name: Nama produk
       - brand: Merek produk
       - price: Harga produk
+    - Method:
+        - Getter
+        - Setter
 2. Clothing (C++, Java, Python, PHP)
     - Turunan dari: Product
     - Atribut:
       - size: Ukuran pakaian
       - material: Bahan pakaian
       - gender: Jenis kelamin yang cocok untuk pakaian ini
+    - Method:
+        - Getter
+        - Setter
 3. Shirt (C++, Java, Python, PHP)
    - Turunan dari: Clothing
     - Atribut:
       - color: Warna pakaian
       - sleeve_type: Jenis lengan kemeja
+    - Method:
+        - Getter
+        - Setter
+3. Tabel (C++, Java, Python, PHP)
+    - Atribut:
+      - Baris: Banyaknya baris pada tabel
+      - Kolom: Banyaknya kolom pada tabel
+    - Method:
+        - Getter
+        - Setter
+        - BuatTabel
 
 ## Dokumentasi Program 
 ![Java1](https://github.com/NabilHanifA/LP2DPBO2024C1/assets/133948088/331a7f60-1882-42fc-8eca-ef9389b2b421)
