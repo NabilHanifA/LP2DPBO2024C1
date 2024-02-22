@@ -59,7 +59,7 @@ int main() {
                     Shirt shirt = list[i];
                     data[i] = {
                         shirt.getIdProduct(), shirt.getName(), shirt.getBrand(), shirt.getPrice(),
-                        shirt.getSize(), shirt.getMaterial(), shirt.getGender(), shirt.getColor(), shirt.getSleeve_type()
+                        shirt.getSize(), shirt.getMaterial(), shirt.getGender(), shirt.getColor(), shirt.getSleeveType()
                     };
                 }
 

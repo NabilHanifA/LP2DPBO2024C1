@@ -30,7 +30,7 @@ class Shirt : public Clothing
         return this->color;
     }
 
-    string getSleeve_type() {
+    string getSleeveType() {
         return this->sleeve_type;
     }
 
@@ -39,7 +39,7 @@ class Shirt : public Clothing
         this->color = color;
     }
 
-    void setSleeve_type(string sleeve_type) {
+    void setSleeveType(string sleeve_type) {
         this->sleeve_type = sleeve_type;
     }
 
